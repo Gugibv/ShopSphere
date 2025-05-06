@@ -1,0 +1,35 @@
+server:
+  port: 8080
+  ssl:
+    enabled: true
+    key-store: classpath:ssl/cls-lhubsg-mkcert.p12
+    key-store-password: changeit
+    key-store-type: PKCS12
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          lhubsso:
+            client-id: custom-funding-dev
+            client-authentication-method: private_key_jwt
+            authorization-grant-type: authorization_code
+            redirect-uri: "https://cls.loc.lhubsg.com:8080/api/sg/wb/v1/common/oidc/callback"
+            scope: openid   # openid,profile
+            provider: lhubsso
+        provider:
+          lhubsso:
+            authorization-uri: https://sc.lhubsg.com/sam/idp/a/lhubstg/oidc/auth
+            token-uri: https://sc.lhubsg.com/sam/idp/a/lhubstg/oidc/token
+            jwk-set-uri: https://sc.lhubsg.com/sam/idp/a/lhubstg/oidc/.well-known/keys
+      resourceserver:
+        jwt:
+          jwk-set-uri: https://sc.lhubsg.com/sam/idp/a/lhubstg/oidc/.well-known/keys
+  application:
+    name: security-connect-integration
+
+
+logging:
+  level:
+    org.springframework.security: DEBUG
