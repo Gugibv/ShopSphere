@@ -1,10 +1,8 @@
 # ShopSphere
 
-11
-
 My Product
 
-一、技术架构
+# 一、技术架构
 
 后段
 
@@ -24,11 +22,11 @@ react node-v:v23.11.0
 jenkins + docker
 ```
 
- 二、后端开发
+#  二、后端开发
 
 
 
-三、前端开发
+# 三、前端开发
 
 ```
 npx create-react-app mall-admin-app
@@ -175,6 +173,12 @@ Public Key
 
 
 ### 配置https
+
+点击
+
+
+
+
 
 问题描述：本地springboot 是通过http启动的，但是发给sso配置的callback url 是https的。
 
