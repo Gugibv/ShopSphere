@@ -188,7 +188,7 @@ Public Key
 
 
 
-![](/Users/grey/Repository/git_repository/Learning_SpringSecurity/security-connect-sso/Issue track doc/pics/003.png)
+![](./pics/003.png)
 
 
 
@@ -297,7 +297,7 @@ mkcert cls.loc.lhubsg.com
 提示如下
 
 ```
-reated a new certificate valid for the following names 📜
+reated a new certificate valid for the following names
  - "cls.loc.lhubsg.com"
 
 The certificate is at "./cls.loc.lhubsg.com.pem" and the key at "./cls.loc.lhubsg.com-key.pem" 
