@@ -174,12 +174,6 @@ Public Key
 
 ### 配置https
 
-点击
-
-
-
-
-
 问题描述：本地springboot 是通过http启动的，但是发给sso配置的callback url 是https的。
 
 跳转到SSO 输入用户名和密码后，下面的url 报错：
